@@ -35,3 +35,24 @@ for (let property in stock2) {
     console.log(`${property} = ${value}`);
 }
 
+//ex 13
+
+const someStocks = [stock1,stock2];
+for (let i=0; i<someStocks.length; i++) {
+    console.log(someStocks[i].symbol);
+}
+
+for (let ss of someStocks) {
+    console.log(ss.symbol);
+}
+
+const portfolio = [
+    {symbol: "AAPL", price: 200, quantity: 20},
+    {symbol: "ADBE", price: 260, quantity: 10},
+    {symbol: "GOOG", price: 1200, quantity: 5}
+];
+
+for (let item of portfolio) {
+    let worth = item.price * item.quantity;
+    console.log(`${item.symbol} = $${worth}`);
+}
