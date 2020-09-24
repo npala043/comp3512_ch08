@@ -25,7 +25,7 @@ function calculateTip(total) {
 }
 
 for (let bill of billTotals) {
-    tips.push(calculateTips(bill));
+    tips.push(calculateTip(bill));
 }
 
 for (let i=0; i<billTotals.length; i++) {
